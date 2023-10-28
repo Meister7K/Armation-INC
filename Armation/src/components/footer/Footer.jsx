@@ -3,6 +3,8 @@ import './Footer.scss'
 
 export const Footer = () => {
 
+    const date = new Date().getFullYear();
+
     return (<>
         <div className='footer'>
             
@@ -11,12 +13,20 @@ export const Footer = () => {
                 <h4>Phone</h4>
                 <p>763-717-8277</p>
                 <h4>Email</h4>
-                <p>General Inquiries-A/P</p>
-                <a href='mailto:Office@armationinc.com' target='_blank' rel="noreferrer"><email>Office@armationinc.com</email></a> 
-                <p>Riley Vollkommer - President</p>
-                <a href='mailto:Riley@armationinc.com' target='_blank' rel="noreferrer"><email>Riley@armationinc.com</email></a> 
-                <p>Andy Brookman - Vice President</p>
-                <a href='mailto:Andy@armationinc.com' target='_blank' rel="noreferrer"><email>Andy@armationinc.com</email></a> 
+                <ul>
+                    <li><p>General Inquiries-A/P</p>
+                <a href='mailto:Office@armationinc.com' target='_blank' rel="noreferrer">Office@armationinc.com</a> </li>
+                <li>
+                   <p>Riley Vollkommer - President</p>
+                <a href='mailto:Riley@armationinc.com' target='_blank' rel="noreferrer">Riley@armationinc.com</a>  
+                </li>
+                
+                <li>
+                    <p>Andy Brookman - Vice President</p>
+                <a href='mailto:Andy@armationinc.com' target='_blank' rel="noreferrer">Andy@armationinc.com</a> 
+                    </li>
+                </ul>
+                
             </div>
             <div className='location'>
                 <h3>Location</h3>
@@ -36,7 +46,7 @@ export const Footer = () => {
                 <time></time>
             </div>
 
-
+            <p className='copy'>Copyright © {date} Armation Inc.</p>
         </div>
     </>)
 }

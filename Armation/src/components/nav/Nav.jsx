@@ -5,7 +5,7 @@ import { useState } from 'react'
 
 export const Nav = () => {
 
-    const [active, setActive] = useState(false);
+    const [active, setActive] = useState('hidden');
 
     const toggleActive = () => {
 

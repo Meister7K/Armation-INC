@@ -9,14 +9,15 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
   box-sizing: border-box;
-  --border: 2px inset transparent;
+  --border: 2px inset rgba(200,200,200, 0.5);
   --transition: all .5s;
+  --aColor: #646cff;
 }
 
 .theme-light{
 --color: rgba(0,0,0, 0.9);
 --background: rgba(255,255,255, 0.9);
---aColor: rgba(25, 0,200, 0.9)
+
 }
 
 .theme-dark{
@@ -40,9 +41,16 @@ body {
 
 a{
   color: var(--color);
+  transition: var(--transition);
   &:hover{
-
+    color: var(--aColor);
   }
+}
+
+ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 button {
@@ -61,6 +69,7 @@ button {
   }
   &:focus,:focus-visible{
     outline: 4px auto -webkit-focus-ring-color;
+    background-color: var(--aColor);
   }
 }
 

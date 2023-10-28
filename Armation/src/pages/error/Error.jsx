@@ -7,11 +7,11 @@ export const Error =() =>{
     const error = useRouteError();
     console.error(error);
 
-    return(<>
+    return(<div className="page">
     <h1>Ope!</h1>
     <h2>{error.status + ' ' + (error.statusText|| error.message)}</h2>
     <p>
         <i>{error.data}</i>
     </p>
-    </>)
+    </div>)
 }

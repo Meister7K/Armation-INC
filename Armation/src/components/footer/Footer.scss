@@ -17,8 +17,9 @@
 .footer{
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: start;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .contact{
@@ -29,9 +30,16 @@
         margin-bottom: 0;
     }
 }
-
-@media screen and (max-width: 500px){
-    .footer{
-        flex-direction: column;
-    }
+.copy{
+    font-size: .9em;
+    font-style: italic;
+    display:block;
+    width: 100%;
+    
 }
+
+// @media screen and (max-width: 500px){
+//     .footer{
+//         flex-direction: column;
+//     }
+// }
