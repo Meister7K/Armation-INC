@@ -11,7 +11,7 @@ export const Footer = () => {
             <div className='contact'>
                 <h3>Contact</h3>
                 <h4>Phone</h4>
-                <p>763-717-8277</p>
+                <p className='phone'>763-717-8277</p>
                 <h4>Email</h4>
                 <ul>
                     <li><p>General Inquiries-A/P</p>

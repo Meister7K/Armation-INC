@@ -19,29 +19,31 @@ export const Nav = () => {
     }
 
 
+
+
     return (<>
 
-        <button className='menu-btn' onClick={toggleActive}>Menu</button>
-        <nav className={`nav ${active}`}>
-            <div>
+        <button className={`menu-btn ${active === 'visible'?'hidden':'visible'}`} onClick={toggleActive}>Menu</button>
+        <nav className={`nav ${active} `}>
+           
                 <ul>
                     <li>
-                        <Link to={'/'}><button onClick={toggleActive}>Home</button></Link>
+                        <Link to={'/'}><button className='link-btn' onClick={toggleActive}>Home</button></Link>
                     </li>
                     <li>
-                        <Link to={'about'}><button onClick={toggleActive}>About</button></Link>
+                        <Link to={'about'}><button className='link-btn' onClick={toggleActive}>About</button></Link>
                     </li>
                     <li>
-                        <Link to={'services'}><button onClick={toggleActive}>Services</button></Link>
+                        <Link to={'services'}><button className='link-btn' onClick={toggleActive}>Services</button></Link>
                     </li>
                     <li>
                         <Theme />
                     </li>
                     <li>
-                        <button onClick={toggleActive}>X</button>
+                        <button className='link-btn' id='x' onClick={toggleActive}>X</button>
                     </li>
                 </ul>
-            </div>
+            
         </nav>
     </>)
 }

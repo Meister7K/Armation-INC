@@ -69,7 +69,12 @@ button {
   }
   &:focus,:focus-visible{
     outline: 4px auto -webkit-focus-ring-color;
+    // background-color: var(--aColor);
+  }
+  &:active{
     background-color: var(--aColor);
+    transform: scale(.9);
+    transition: var(--transition)
   }
 }
 

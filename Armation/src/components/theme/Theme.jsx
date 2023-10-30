@@ -26,7 +26,7 @@ export const Theme = () => {
 
     return (
     <>
-        <button onClick={toggleTheme} className={currTheme}>Theme</button>
+        <button onClick={toggleTheme} className='link-btn theme'>Theme</button>
     </>
     )
 

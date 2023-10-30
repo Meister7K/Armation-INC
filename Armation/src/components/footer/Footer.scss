@@ -5,14 +5,22 @@
     list-style: none;
     padding: 0;
     margin: 0;
+    li{
+        padding: .5em;
+    }
 
 }
 
 .location{
+    min-width: fit-content;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    // padding-left: 2em;
+    h4{
+        margin-bottom: 0;
+    }
 }
 .footer{
     display: flex;
@@ -20,14 +28,24 @@
     align-items: start;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    
 }
 
 .contact{
+    min-width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    // padding-right: 2em;
     p{
         margin-bottom: 0;
     }
     h4{
         margin-bottom: 0;
+    }
+    .phone{
+        margin: 0;
     }
 }
 .copy{

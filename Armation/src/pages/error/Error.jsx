@@ -1,8 +1,16 @@
 import { useRouteError } from "react-router-dom";
+import { useEffect } from "react";
 
 import './Error.scss'
 
 export const Error =() =>{
+
+    useEffect(() => {
+        window.scrollTo({
+               top: 0,
+               left: 0,
+             });
+     }, [])
 
     const error = useRouteError();
     console.error(error);

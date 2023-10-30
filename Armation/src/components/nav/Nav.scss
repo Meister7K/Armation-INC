@@ -1,6 +1,6 @@
 
 .nav{
-    position: absolute;
+    position: fixed;
     z-index: 10;
     top: 0;
     left:0;
@@ -20,6 +20,9 @@
         
         height: 100%;
         width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
     }
     a{
         text-decoration: none;
@@ -27,9 +30,37 @@
    
 }
 
+.link-btn{
+    width: 50%;
+    height: 100%;
+    &:hover{
+        backdrop-filter: invert(100);
+    }
+}
+
+.menu-btn{
+    opacity: 0.5;
+    &:hover{
+        opacity: 1;
+    }
+}
+
+#x{
+    width: fit-content;
+    height: fit-content;
+}
+  
+.menu-btn, #x{
+    position: fixed;
+    bottom:1em;
+    right: 1em;
+}
+
+
 .hidden{
         display: none;
     }
+
 .visible{
         display: all;
         

@@ -1,7 +1,15 @@
 import aboutImg from '../../assets/eng1.jpg'
 import './About.scss'
+import { useEffect } from 'react'
 
 export const About =()=>{
+
+    useEffect(() => {
+        window.scrollTo({
+               top: 0,
+               left: 0,
+             });
+     }, [])
 
     return(<div className='page'>
     <h2>About Our Company</h2>
